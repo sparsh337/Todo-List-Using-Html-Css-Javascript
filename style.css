@@ -2,14 +2,26 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    /* background: linear-gradient(135deg, #f5f7fa, #c3cfe2); */
     color: #333;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
     min-height: 100vh;
-  }
+
+    /* Fallback color */
+    background-color: #f0f0f0;
+
+    /* Background image */
+    background-image: url("https://sparsh337.github.io/Todo-List-Using-Html-Css-Javascript/assets/bg.jpeg");
+
+    /* Background styling */
+    background-size: cover; /* Make the image cover the entire screen */
+    background-repeat: no-repeat; /* Prevent tiling */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Make the image fixed during scrolling */
+}
+
   
   h1 {
     margin-bottom: 20px;
