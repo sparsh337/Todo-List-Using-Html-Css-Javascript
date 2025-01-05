@@ -1,0 +1,130 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    /* background: linear-gradient(135deg, #f5f7fa, #c3cfe2); */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Input and button styling */
+  input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    width: 80%;
+    max-width: 400px;
+    transition: border-color 0.3s ease;
+    flex: 1
+  }
+  
+  input:focus {
+    border-color: #007BFF;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    flex-shrink: 0;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Task list */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+  }
+  
+  li:hover {
+    transform: translateY(-3px);
+    background-color: #f8f9fa;
+  }
+  
+  li button.delete {
+    background-color: #dc3545;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  li button.delete:hover {
+    background-color: #a71d2a;
+    transform: scale(1.1);
+  }
+  div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between input and button */
+    margin-bottom: 20px; /* Add space below */
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  
+  /* Responsive design */
+  /* @media (max-width: 768px) {
+    input,
+    button {
+      width: 100%;
+      margin: 5px 0;
+    }
+  
+    ul {
+      width: 100%;
+    }
+  
+    li {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    li button.delete {
+      align-self: flex-end;
+    }
+  } */
+  
